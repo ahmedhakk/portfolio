@@ -4,7 +4,7 @@ import "./globals.css";
 const title = "Ahmed Mohamed - Senior Frontend Engineer";
 const description =
   "Ahmed Mohamed portfolio focused on scalable React, Vue, Next.js, Nuxt, TypeScript, workflow automation, messaging products, payments, booking platforms, and frontend architecture.";
-const siteUrl = "https://TODO-your-domain.com";
+const siteUrl = "https://ahmadmohamed.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Nuxt",
     "Next.js",
     "TypeScript",
-    "Tailwind CSS"
+    "Tailwind CSS",
   ],
   openGraph: {
     title,
@@ -35,21 +35,21 @@ export const metadata: Metadata = {
         url: "/images/dreams-workflow-builder.png",
         width: 1920,
         height: 981,
-        alt: "Dreams workflow automation builder interface"
-      }
+        alt: "Dreams workflow automation builder interface",
+      },
     ],
     locale: "en_US",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/dreams-workflow-builder.png"]
+    images: ["/images/dreams-workflow-builder.png"],
   },
   icons: {
-    icon: "/favicon.svg"
-  }
+    icon: "/favicon.svg",
+  },
 };
 
 export const viewport: Viewport = {
@@ -57,8 +57,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#f7f9fc" },
-    { media: "(prefers-color-scheme: dark)", color: "#080d17" }
-  ]
+    { media: "(prefers-color-scheme: dark)", color: "#080d17" },
+  ],
 };
 
 function ThemeScript() {
@@ -75,7 +75,11 @@ function ThemeScript() {
   return <script dangerouslySetInnerHTML={{ __html: code }} />;
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">

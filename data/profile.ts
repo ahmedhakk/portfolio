@@ -7,7 +7,7 @@ export const profile = {
   location: "Cairo, Egypt",
   email: "ahmad.mohamed.me@gmail.com",
   phone: "+201211119412",
-  siteUrl: "https://TODO-your-domain.com",
+  siteUrl: "https://ahmadmohamed.netlify.app",
   resumeUrl: "/AhmedMohamedResume.pdf",
   summary:
     "Frontend Developer with 5+ years of experience building scalable, responsive web applications and complex product interfaces across workflow automation, messaging, payments, and booking platforms.",

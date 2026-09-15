@@ -27,7 +27,7 @@ export function HeroSection() {
               View My Work
               <ArrowDown size={18} />
             </ButtonLink>
-            <ButtonLink href={profile.resumeUrl} variant="secondary" download>
+            <ButtonLink href={profile.resumeUrl} variant="secondary" download prefetch={false}>
               Download CV
               <Download size={18} />
             </ButtonLink>

@@ -24,7 +24,7 @@ export function ContactSection() {
                     Email Me
                     <Mail size={18} />
                   </ButtonLink>
-                  <ButtonLink href={profile.resumeUrl} variant="ghost" download className="text-surface hover:bg-white/10 hover:text-white dark:text-slate-700 dark:hover:bg-slate-100 dark:hover:text-slate-950">
+                  <ButtonLink href={profile.resumeUrl} variant="ghost" download prefetch={false} className="text-surface hover:bg-white/10 hover:text-white dark:text-slate-700 dark:hover:bg-slate-100 dark:hover:text-slate-950">
                     Download CV
                   </ButtonLink>
                 </div>

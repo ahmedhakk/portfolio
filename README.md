@@ -13,8 +13,9 @@ pnpm dev
 
 ```bash
 pnpm build
-pnpm start
 ```
+
+The production files are generated in `out`.
 
 ## Content Editing
 
@@ -28,15 +29,23 @@ pnpm start
 
 ## TODO Before Deploying
 
-- Replace `https://TODO-your-domain.com` in `data/profile.ts` and `app/layout.tsx`.
 - Add verified live demo and GitHub links for projects when available.
 - Add more verified project screenshots to `public/images`.
 - Replace the TODO additional project entry with real project data.
 
-## Deploy
+## Deploy To Netlify
 
-Push the repository to GitHub, import it in Vercel, and keep the default Next.js build settings:
+This project is configured as a static Next.js export for Netlify.
 
 - Install command: `pnpm install`
 - Build command: `pnpm build`
-- Output directory: `.next`
+- Publish directory: `out`
+- Config file: `netlify.toml`
+
+## Deploy To Vercel
+
+Push the repository to GitHub, import it in Vercel, and use the static export output:
+
+- Install command: `pnpm install`
+- Build command: `pnpm build`
+- Output directory: `out` with the current static export config
