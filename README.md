@@ -5,14 +5,14 @@ Production-ready personal portfolio built with Next.js, TypeScript, Tailwind CSS
 ## Run Locally
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 ## Production Build
 
 ```bash
-pnpm build
+npm run build
 ```
 
 The production files are generated in `out`.
@@ -38,7 +38,8 @@ The production files are generated in `out`.
 This project is configured as a static Next.js export for Netlify.
 
 - Install command: `pnpm install`
-- Build command: `pnpm build`
+- Install command: `npm install`
+- Build command: `npm run build`
 - Publish directory: `out`
 - Config file: `netlify.toml`
 
@@ -46,6 +47,6 @@ This project is configured as a static Next.js export for Netlify.
 
 Push the repository to GitHub, import it in Vercel, and use the static export output:
 
-- Install command: `pnpm install`
-- Build command: `pnpm build`
+- Install command: `npm install`
+- Build command: `npm run build`
 - Output directory: `out` with the current static export config
